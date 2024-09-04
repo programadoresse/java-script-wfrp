@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JavaScript</title>
+    <!-- Vincula el archivo CSS externo si lo tienes -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejemplo de Inclusión de JavaScript</h1>
+    
+    <!-- Incluye el archivo JavaScript externo -->
+    <script src="script.js"></script>
+    
+    <!-- Bloque de JavaScript en línea -->
+    <script>
+        // Código JavaScript en línea
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('Documento cargado y listo');
+            
+            // Ejemplo de uso de función desde el archivo JS externo
+            if (typeof saludar === 'function') {
+                console.log(saludar('Mundo'));
+            }
+        });
+    </script>
+</body>
+</html>
